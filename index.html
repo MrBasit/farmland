@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <title>FarmLand</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/lightslider.css"> -->
+    <!-- <link rel="stylesheet" href="./css/slick.css"> -->
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="./js/lightslider.js"></script> -->
+    <!-- <script src="./js/jqueryup.js"></script> -->
+    <!-- <script src="./js/slick.min.js"></script> -->
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container header_content">
+            <div class="main_nav d-flex align-items-center justify-content-between py-3">
+
+                <ul class="header_list">
+                    <li class="header_list_item">
+                        <button class="trigger d-flex d-md-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </li>
+                    <li class="header_list_item d-none d-md-flex">
+                        <button class="header_list_link">Sign in</button>
+                    </li>
+                    <li class="header_list_item d-none d-md-flex">
+                        <button class="header_list_link">Register</button>
+                    </li>
+                </ul>
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="trackpax">
+                </a>
+                <ul class="header_list">
+                    <li class="header_list_item">
+                        <button class="header_list_link" href="#">EN | AR</button>
+                    </li>
+                    <li class="header_list_item">
+                        <button class="header_list_btn search_bar_toggle"><img src="./img/search.png"
+                                alt="search"></button>
+                    </li>
+                    <li class="header_list_item">
+                        <button class="header_list_btn"><img src="./img/shop.png" alt="shop"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box border-bottom px-3">
+                <form>
+                    <div class="input-group my-2 flex-nowrap">
+                        <input type="text" class="form-control" placeholder="Search ....!" aria-label="Search ....!"
+                            aria-describedby="searchbar">
+                        <button class="input-group-text search_btn" id="searchbar">
+                            <img src="./img/search.png" alt="search">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header_bottom_menu">
+            <div class="header_bottom_menu_overlay" onclick="headerNavFunc()">
+
+            </div>
+            <div class="header_bottom_nav">
+                <span class="closeNavIcon d-md-none d-block" onclick="headerNavFunc()">
+                    <i class="fas fa-times"></i>
+                </span>
+                <ul class="header_bottom_list">
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link active" href="#showcase">home</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">about us</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">brand</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">shop</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">content</a>
+                    </li>
+                </ul>
+                <div class="social_btn d-md-none d-flex pt-4 mb-4">
+                    <button class="header_form_link w-50">Sign in</button>
+
+                    <button class="header_form_link w-50  ml-2">Register</button>
+                </div>
+                <div class="header_bottom_footer d-md-none d-block">
+                    <div class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
+                        <a href="#" class="header__social__icon"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="header__social__icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="header__social__icon"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <p class="header_bottom_footer_txt text-center">Copyright © 2020 rrstek-cctv-All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="slider">
+                <div class="row slide active">
+                    <div class="col-6">
+                        <div class="showcase_slider_content_main">
+                            <h1  class=" slider_content_title" >GRANORO <br> Bio Penne</h1>
+                            <div  class=" d-flex align-items-center name_city_main">
+                                <span class="slider_content_weight">Rigate 500g</span>
+                                <span class="dot"></span>
+                                <span class="slider_content_city">Italy</span>
+                            </div>
+                            <h3  class=" slider_content_price">0.359 KD</h3>
+                           
+                            <a  class=" slider_content_cart_btn d-flex align-items-center justify-content-center" href="#"> <img src="./img/plus.png" alt="plus icon"> add to cart</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column justify-content-center shocase_slider_right">
+                            <div class="showcase_slider_img_main">
+                                <img class="showcase_img_1" src="./img/ellipse.png" alt="">
+                                <img class="showcase_img_2" src="./img/card10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row slide">
+                    <div class="col-6">
+                        <div class="showcase_slider_content_main">
+                            <h1 class="slider_content_title" >GRANORO <br> Bio Penne</h1>
+                            <div class="d-flex align-items-center name_city_main">
+                                <span class="slider_content_weight">Rigate 500g</span>
+                                <span class="dot"></span>
+                                <span class="slider_content_city">Italyes</span>
+                            </div>
+                            <h3 class="slider_content_price">0.585 KD</h3>
+                           
+                            <a class="slider_content_cart_btn d-flex align-items-center justify-content-center" href="#"> <img src="./img/plus.png" alt="plus icon"> add to cart</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column justify-content-center shocase_slider_right">
+                            <div class="showcase_slider_img_main">
+                                <img class="showcase_img_1" src="./img/ellipse.png" alt="">
+                                <img class="showcase_img_2" src="./img/card12.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row slide">
+                    <div class="col-6">
+                        <div class="showcase_slider_content_main">
+                            <h1 class="slider_content_title" >GRANORO <br> Bio Penne</h1>
+                            <div class="d-flex align-items-center name_city_main">
+                                <span class="slider_content_weight">Rigate 500g</span>
+                                <span class="dot"></span>
+                                <span class="slider_content_city">Italyes</span>
+                            </div>
+                            <h3 class="slider_content_price">0.777 KD</h3>
+                           
+                            <a class="slider_content_cart_btn d-flex align-items-center justify-content-center" href="#"> <img src="./img/plus.png" alt="plus icon"> add to cart</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column justify-content-center shocase_slider_right">
+                            <div class="showcase_slider_img_main">
+                                <img class="showcase_img_1" src="./img/ellipse.png" alt="">
+                                <img class="showcase_img_2" src="./img/showcase slide 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="indicator">
+
+            </div>
+        </div>
+    </section>
+    <!-- product -->
+    <section class="product" id="product">
+        <div class="container">
+            <div class="product_categories d-flex">
+                <span id="categories" class="product_categories_btn  d-flex align-items-center">
+                    categories 
+                </span>
+                <!-- <i class="fas fa-plus"></i> -->
+                <!-- <i class="fas fa-minus"></i> -->
+                <span id="brands" class="product_categories_btn  d-flex align-items-center">
+                    brands
+                </span>
+            </div>
+            <div class="product_content_main">
+                <div id="categories_tab" class="brands_content categories_tabs">
+                    <div class="product_filter">
+                        <div class="product_filter_list row justify-content-between">
+                            <div class="col-6 col-md-3 filter_item ">
+                                <button class="filter_btn">
+                                    president <span class="quantity">10</span>
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-3 filter_item mx-0 mx-md-2">
+                                <button class="filter_btn">farmland <span class="quantity">15</span></button>
+                                
+                            </div>
+                            <div class="col-6 col-md-3 filter_item ">
+                                <button class="filter_btn">
+                                    granoro <span class="quantity">05</span>
+                                </button>
+                               
+                            </div>
+                            <div class="col-6 col-md-3 filter_item  ">
+                                <button class="filter_btn">
+                                    alattar <span class="quantity">60</span>
+                                </button>
+                                
+                            </div>
+                            <div class="col-6 col-md-3 filter_item mx-0 mx-md-2">
+                                <button class="filter_btn" focus="focus">
+                                    rella <span class="quantity">02</span>
+                                </button>
+                                
+                            </div>
+                            <div class="col-6 col-md-3 filter_item ">
+                                <button class="filter_btn">
+                                    hollinger <span class="quantity">01</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brands_rella">
+                        <div class="content_slider">
+                            <div class="content_slide active">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_slide">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_slide">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="brands_tab" class="brands_content categories_tabs">
+                    <div class="product_filter">
+                        <div class="product_filter_list row justify-content-between">
+                            <div class="col-6 col-md-3 filter_item ">
+                                <button class="filter_btn">
+                                    president <span class="quantity">10</span>
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-3 filter_item mx-0 mx-md-2">
+                                <button class="filter_btn">farmland <span class="quantity">15</span></button>
+                                
+                            </div>
+                            <div class="col-6 col-md-3 filter_item ">
+                                <button class="filter_btn">
+                                    granoro <span class="quantity">05</span>
+                                </button>
+                               
+                            </div>
+                            <div class="col-6 col-md-3 filter_item  ">
+                                <button class="filter_btn">
+                                    alattar <span class="quantity">60</span>
+                                </button>
+                                
+                            </div>
+                            <div class="col-6 col-md-3 filter_item mx-0 mx-md-2">
+                                <button class="filter_btn" focus="focus">
+                                    rella <span class="quantity">02</span>
+                                </button>
+                                
+                            </div>
+                            <div class="col-6 col-md-3 filter_item ">
+                                <button class="filter_btn">
+                                    hollinger <span class="quantity">01</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brands_rella">
+                        <div class="content_slider">
+                            <div class="content_slide active">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_slide">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card12.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card10.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <div class="prd_crd_img">
+                                                    <img src="./img/card11.png" alt="rella img">
+                                                </div>
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_slide">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card12.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card11.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="prd_card">
+                                            <div class="prd_crd_head text-right">
+                                               <div class="d-flex justify-content-end text-center">
+                                                    <span class="prd_crd_wht">500 <br> grm</span>
+                                                    <span class="prd_crd_wht">0.900 <br> KD</span>
+                                               </div>
+                                                <p class="prd_crd_specail_price">Special Price x2</p>
+                                            </div>
+                                            <div class="prd_crd_body text-center">
+                                                <img src="./img/card10.png" alt="rella img" class="prd_crd_img">
+                                                <h3 class="prd_name">GRANORO Spirali Fantasia</h3>
+                                                <button class="prd_crd_btn">Add to cart</button>
+                                                <button class="prd_crd_remove_btn">Remove from cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="content_controls text-center">
+        
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- product end -->
+    <!-- logo -->
+    <section id="logos" class="logos">
+        <h1 class="logos_title text-center">
+            We're Trusted BY
+        </h1>
+        <div class="logo_bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-4 d-flex justify-content-center logos__img_wrapper">
+                        <img class="logos_img logo_img_1" src="./img/societe.png" alt="societe">
+                    </div>
+                    <div class="col-4 d-flex justify-content-center logos__img_wrapper">
+                        <img class="logos_img logo_img_2" src="./img/valbreso.png" alt="valbreso feta">
+                    </div>
+                    <div class="col-4 d-flex justify-content-center logos__img_wrapper">
+                        <img class="logos_img logo_img_3" src="./img/daisy.png" alt="daisy">
+                    </div>
+                    <div class="col-4 d-flex justify-content-center logos__img_wrapper">
+                        <img class="logos_img logo_img_4" src="./img/granoro.png" alt="granoro">
+                    </div>
+                    <div class="col-4 d-flex justify-content-center logos__img_wrapper">
+                        <img class="logos_img logo_img_5" src="./img/president.png" alt="president">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- logo end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <img class="footer_logo" src="./img/footerlogo.png" alt="farmland">
+            <div class="row justify-content-between footer_col_main">
+                <div class="col-2 first_col d-flex flex-column justify-content-between">
+                    <h2 class="footer_social_title">Follow us</h2>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social_icon"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fab fa-behance-square"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-2 sec_col">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Why Swell</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Features</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 third_col">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Enterprise</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Case Studies</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Partners</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 d-flex align-items-end fourth_col">
+                    <form>
+                        <div class="input-group my-2 flex-nowrap">
+                            <input type="text" class="form-control" placeholder="Subscribe us" aria-label="Subscribe_us"
+                                aria-describedby="Subscribe_us">
+                            <button class="input-group-text search_btn" id="Subscribe_us">
+                                <i class="fas fa-paper-plane"></i> 
+                            </button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+            <div class="footer_bottom text-center">
+                <p class="footer_bottom_txt">&copy;2020 FarmLand.Inc</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main2.js"></script>
+</body>
+
+</html>
