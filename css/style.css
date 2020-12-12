@@ -621,7 +621,6 @@ header .search_box .search_btn img{
 .categories_tabs{
     display: none;
     transition: all .5s;
-    
 }
 .categories_tabs.active{
     transform: translateY(0px);
@@ -638,12 +637,12 @@ header .search_box .search_btn img{
         opacity: 1;
     }
 }
-.content_controls{
+/* .content_controls{
     display: none;
 }
 .content_controls.active{
     display: block;
-}
+} */
 
 
 .product_categories{
@@ -705,7 +704,7 @@ header .search_box .search_btn img{
 }
 /* card */
 .product_filter{
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
 .content_slider .content_slide{
     display: none;

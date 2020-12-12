@@ -105,7 +105,7 @@ try{
       if(this.classList.contains('active')){
         this.classList.toggle('active');
         targatedItem.classList.toggle('active');
-        controlsMain.classList.toggle('active');
+        // controlsMain.classList.toggle('active');
       }else{
             
         // deactivate active from all productCategoriesButtons
@@ -115,7 +115,7 @@ try{
 
         this.classList.add('active');
         targatedItem.classList.add('active');
-        controlsMain.classList.add('active');
+        // controlsMain.classList.add('active');
       }
 
 
