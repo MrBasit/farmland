@@ -11,7 +11,6 @@ try {
     document.addEventListener("scroll", () => {
         if (scrollY > 100) {
             document.querySelector("header").classList.add("header_shadow");
-
         }
         else {
             document.querySelector("header").classList.remove("header_shadow");
@@ -136,3 +135,5 @@ function autoPlay(){
 }
 
 let timer=setInterval(autoPlay, 5000);
+
+

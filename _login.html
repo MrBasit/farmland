@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <title>FarmLand Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container header_content">
+            <div class="main_nav d-flex align-items-center justify-content-between py-3">
+
+                <ul class="header_list">
+                    <li class="header_list_item">
+                        <button class="trigger d-flex d-md-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </li>
+                    <li class="header_list_item d-none d-md-flex ml-md-0">
+                        <a href="_login.html" class="header_list_link">Sign in</a>
+                    </li>
+                    <li class="header_list_item d-none d-md-flex">
+                        <a href="_signup.html" class="header_list_link">Register</a>
+                    </li>
+                </ul>
+                <a href="index.html" class="logo">
+                    <img src="./img/logo.png" alt="trackpax">
+                </a>
+                <ul class="header_list">
+                    <li class="header_list_item">
+                        <button class="header_list_link" href="#">EN | AR</button>
+                    </li>
+                    <li class="header_list_item">
+                        <button class="header_list_btn search_bar_toggle"><img src="./img/search.png"
+                                alt="search"></button>
+                    </li>
+                    <li class="header_list_item">
+                        <button class="header_list_btn cart_popup_btn"><img src="./img/shop.png" alt="shop"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box border-bottom px-3">
+                <form>
+                    <div class="input-group my-2 flex-nowrap">
+                        <input type="text" class="form-control" placeholder="Search ....!" aria-label="Search ....!"
+                            aria-describedby="searchbar">
+                        <button class="input-group-text search_btn" id="searchbar">
+                            <img src="./img/search.png" alt="search">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header_bottom_menu">
+            <div class="header_bottom_menu_overlay" onclick="headerNavFunc()">
+
+            </div>
+            <div class="header_bottom_nav">
+                <span class="closeNavIcon d-md-none d-block" onclick="headerNavFunc()">
+                    <i class="fas fa-times"></i>
+                </span>
+                <ul class="header_bottom_list">
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="index.html">home</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">about us</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">brand</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">shop</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">content</a>
+                    </li>
+                </ul>
+                <div class="social_btn d-md-none d-flex pt-4 mb-4">
+                    <a href="_login.html" class="header_form_link w-50">Sign in</a>
+
+                    <a href="_signup.html" class="header_form_link w-50  ml-2">Register</a>
+                </div>
+                <div class="header_bottom_footer d-md-none d-block">
+                    <div class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
+                        <a href="#" class="header__social__icon"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="header__social__icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="header__social__icon"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <p class="header_bottom_footer_txt text-center">Copyright © 2020 rrstek-cctv-All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- login -->
+    <div class="login_main login_container">
+        <h1 class="login_title text-center">
+            Welcome Back !
+        </h1>
+        <form id="login_form" name="login_form">
+            <div class="form-group" id="login_email">
+                <label for="loginEmail">username/email</label>
+                <input class="form-control" type="email" id="loginEmail" placeholder="test@Example.com" onkeydown="validateLoginEmail()">
+            </div>
+            <div class="form-group">
+                <label for="ps">Password</label>
+                <input class="form-control" type="password" id="login_ps">
+            </div>
+            <div class="signin_forget d-flex align-items-center justify-content-between">
+                <div class="signin">
+                    <label for="login_chk" class="login_chk">
+                        <input class="option_input checkbox" type="checkbox" id="login_chk">
+                        Stay Signed in
+                    </label>
+                </div>
+                <div class="forget">
+                    <a class="forgot_pass" href="#"><img src="./img/lockIcon.png" class="lockIcon1" alt="lockIcon"><img src="./img/lockBlckIcon.png" class="lockIcon2" alt="lockIcon">forgot Password</a>
+                </div>
+            </div>
+            <button class="login_btn">log in</button> <br>
+            <button class="cnt_google ">Continue with Google <img class="gogle_clr" src="./img/gmailIcon.png" alt="gmailIcon"><img class="gogle_wht" src="./img/gmailWhiteIcon.png" alt="gmailIcon"></button>
+            <button class="cnt_facebook">Continue with Facebook <img class="fb_clr" src="./img/fbIcon.png" alt="facebookIcon"><img class="fb_wht" src="./img/fbwhiteIcon.png" alt="facebookIcon"></button>
+        </form>
+        <p class="dnt_have_account">Don't have an account. <a class="red_signup" href="#">Sign up</a> Now</p>
+    </div>
+    <!-- login end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <img class="footer_logo" src="./img/footerlogo.png" alt="farmland">
+            <div class="row justify-content-between footer_col_main">
+                <div class="col-md-2 col-4 first_col d-flex flex-column justify-content-between ">
+                    <h2 class="footer_social_title">Follow us</h2>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social_icon"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fab fa-behance-square"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 sec_col">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Why Swell</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Features</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-4 third_col">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Enterprise</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Case Studies</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Partners</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-9 d-flex align-items-md-end fourth_col mt-3 mt-md-0 mx-auto mx-md-0">
+                    <form>
+                        <div class="input-group my-2 flex-nowrap">
+                            <input type="text" class="form-control" placeholder="Subscribe us" aria-label="Subscribe_us"
+                                aria-describedby="Subscribe_us">
+                            <button class="input-group-text search_btn" id="Subscribe_us">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="footer_bottom text-center">
+                <p class="footer_bottom_txt">&copy;2020 FarmLand.Inc</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- cart popup end -->
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        try {
+            function validateLoginEmail()
+            {
+                var loginEmailMail = document.getElementById('login_email');
+                var loginEmail = document.getElementById('loginEmail');
+                var loginEmailReg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+                console.log('a');
+                
+                if(!loginEmailReg.test(loginEmail.value)){
+                    loginEmailMail.classList.add('invalid');
+                    loginEmailMail.classList.remove('valid');
+                }
+                else{
+                    loginEmailMail.classList.remove('invalid');
+                    loginEmailMail.classList.add('valid');
+                }
+                if(loginEmail === ""){
+                    loginEmailMail.classList.remove('valid');
+                    loginEmailMail.classList.remove('invalid');
+                    loginEmail.innerHTML = '';
+                }
+            }
+
+        } catch (err) {
+            console.log(err);
+        }
+
+    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main2.js"></script>
+</body>
+
+</html>

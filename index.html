@@ -10,15 +10,7 @@
     <link rel="stylesheet" href="./css/font-awesome icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./css/lightslider.css"> -->
-    <!-- <link rel="stylesheet" href="./css/slick.css"> -->
-    <!-- Jquery Scripts -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- <script src="js/popper.min.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="./js/lightslider.js"></script> -->
-    <!-- <script src="./js/jqueryup.js"></script> -->
-    <!-- <script src="./js/slick.min.js"></script> -->
+    
 </head>
 
 <body>
@@ -33,14 +25,14 @@
                             <i class="fas fa-bars"></i>
                         </button>
                     </li>
-                    <li class="header_list_item d-none d-md-flex">
-                        <button class="header_list_link">Sign in</button>
+                    <li class="header_list_item d-none d-md-flex ml-md-0">
+                        <a href="_login.html" class="header_list_link">Sign in</a>
                     </li>
                     <li class="header_list_item d-none d-md-flex">
-                        <button class="header_list_link">Register</button>
+                        <a href="_signup.html" class="header_list_link">Register</a>
                     </li>
                 </ul>
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./img/logo.png" alt="trackpax">
                 </a>
                 <ul class="header_list">
@@ -52,7 +44,7 @@
                                 alt="search"></button>
                     </li>
                     <li class="header_list_item">
-                        <button class="header_list_btn"><img src="./img/shop.png" alt="shop"></button>
+                        <button class="header_list_btn cart_popup_btn"><img src="./img/shop.png" alt="shop"></button>
                     </li>
                 </ul>
             </div>
@@ -94,9 +86,9 @@
                     </li>
                 </ul>
                 <div class="social_btn d-md-none d-flex pt-4 mb-4">
-                    <button class="header_form_link w-50">Sign in</button>
+                    <a href="_login.html" class="header_form_link w-50">Sign in</a>
 
-                    <button class="header_form_link w-50  ml-2">Register</button>
+                    <a href="_signup.html" class="header_form_link w-50  ml-2">Register</a>
                 </div>
                 <div class="header_bottom_footer d-md-none d-block">
                     <div class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
@@ -196,8 +188,6 @@
                 <span id="categories" class="product_categories_btn  d-flex align-items-center">
                     categories 
                 </span>
-                <!-- <i class="fas fa-plus"></i> -->
-                <!-- <i class="fas fa-minus"></i> -->
                 <span id="brands" class="product_categories_btn  d-flex align-items-center">
                     brands
                 </span>
@@ -2351,36 +2341,36 @@
             <img class="footer_logo" src="./img/footerlogo.png" alt="farmland">
             <div class="row justify-content-between footer_col_main">
                 <div class="col-md-2 col-4 first_col d-flex flex-column justify-content-between ">
-                    <h2 class="footer_social_title">Follow us</h2>
+                    <h2 class="footer_social_title">Follow Us</h2>
                     <div class="footer_social">
                         <a href="#" class="footer_social_icon"><i class="fab fa-facebook-square"></i></a>
                         <a href="#" class="footer_social_icon"><i class="fab fa-behance-square"></i></a>
                         <a href="#" class="footer_social_icon"><i class="fab fa-instagram-square"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2 col-4 sec_col">
+                <div class="col-md-2 col-4 sec_col px-0">
                     <ul class="footer_list">
                         <li class="footer_item">
-                            <a class="footer_link" href="#">Why Swell</a>
+                            <a class="footer_link" href="#">Privacy policy</a>
                         </li>
                         <li class="footer_item">
-                            <a class="footer_link" href="#">Features</a>
+                            <a class="footer_link" href="#">Refund policy</a>
                         </li>
                         <li class="footer_item">
-                            <a class="footer_link" href="#">Pricing</a>
+                            <a class="footer_link" href="#">Terms of service</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-4 third_col">
+                <div class="col-md-2 col-4 third_col pr-0">
                     <ul class="footer_list">
                         <li class="footer_item">
-                            <a class="footer_link" href="#">Enterprise</a>
+                            <a class="footer_link" href="#">FAQ</a>
                         </li>
                         <li class="footer_item">
-                            <a class="footer_link" href="#">Case Studies</a>
+                            <a class="footer_link" href="#">Contact Us</a>
                         </li>
                         <li class="footer_item">
-                            <a class="footer_link" href="#">Partners</a>
+                            <a class="footer_link" href="#">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -2403,7 +2393,134 @@
         </div>
     </footer>
     <!-- footer end -->
-    <script></script>
+    <!-- cart popup -->
+    <div class="cart_overlay">
+        <div class="main_cnt_cart">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="title_cart">shopping bag</h1>
+                <button class="cart_close_btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class=""><button class="bck_to_shp_btn btn-block">back to shopping</button></div>
+                <div class=""><button class="prcd_chk_btn btn-block">proceed to checkout</button></div>
+            </div>
+            <div class="user_item_total d-flex justify-content-between align-items-center">
+                <span class="cart_total_itm">06 items</span>
+                <span class="cart_total">3.499 kd</span>
+            </div>
+            <div class="cart_itm_tble">
+                <div class="d-flex cart_items">
+                    <div class="cart_itm_img_wrpr">
+                        <img src="./img/cart_item1.png" alt="cart item">
+                    </div>
+                    <div class="cart_itm_dtls d-flex justify-content-between ">
+                        <div class="cart_img_detail">
+                            <h3 class="cart_itm_name">GRANORO Bio Penne</h3>
+                            <p>size : 500 grams</p>
+                            <p>item price : 0.49 kb</p>
+                            <p>qty : 03</p>
+                            <p>Expected to be shipped by Tomorrow, 5pm EST</p>
+                            <button class="cart_itm_rmve_btn">remove</button>
+                        </div>
+                        <div class="cart_quntity_avbl_offr d-flex flex-column justify-content-between align-items-end">
+                            <div class="cart_quantity_main d-flex justify-content-between align-items-center">
+                                <span class="cart_qty">qty : </span>
+                                <span class="cart_itm">03</span>
+                            </div>
+                            <button class="av_offr_btn"> <img class="moneyIcon1" src="./img/moneyicon.png" alt="money icon"><img class="moneyIcon2" src="./img/moneyiconwhite.png" alt="money icon"> Avail 2x Special offer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex cart_items">
+                    <div class="cart_itm_img_wrpr">
+                        <img src="./img/cart_item1.png" alt="cart item">
+                    </div>
+                    <div class="cart_itm_dtls d-flex justify-content-between ">
+                        <div class="cart_img_detail">
+                            <h3 class="cart_itm_name">GRANORO Bio Penne</h3>
+                            <p>size : 500 grams</p>
+                            <p>item price : 0.49 kb</p>
+                            <p>qty : 03</p>
+                            <p>Expected to be shipped by Tomorrow, 5pm EST</p>
+                            <button class="cart_itm_rmve_btn">remove</button>
+                        </div>
+                        <div class="cart_quntity_avbl_offr d-flex flex-column justify-content-between align-items-end">
+                            <div class="cart_quantity_main d-flex justify-content-between align-items-center">
+                                <span class="cart_qty">qty : </span>
+                                <span class="cart_itm">03</span>
+                            </div>
+                            <button class="av_offr_btn"> <img class="moneyIcon1" src="./img/moneyicon.png" alt="money icon"><img class="moneyIcon2" src="./img/moneyiconwhite.png" alt="money icon"> Avail 2x Special offer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex cart_items">
+                    <div class="cart_itm_img_wrpr">
+                        <img src="./img/cart_item1.png" alt="cart item">
+                    </div>
+                    <div class="cart_itm_dtls d-flex justify-content-between ">
+                        <div class="cart_img_detail">
+                            <h3 class="cart_itm_name">GRANORO Bio Penne</h3>
+                            <p>size : 500 grams</p>
+                            <p>item price : 0.49 kb</p>
+                            <p>qty : 03</p>
+                            <p>Expected to be shipped by Tomorrow, 5pm EST</p>
+                            <button class="cart_itm_rmve_btn">remove</button>
+                        </div>
+                        <div class="cart_quntity_avbl_offr d-flex flex-column justify-content-between align-items-end">
+                            <div class="cart_quantity_main d-flex justify-content-between align-items-center">
+                                <span class="cart_qty">qty : </span>
+                                <span class="cart_itm">03</span>
+                            </div>
+                            <button class="av_offr_btn"> <img class="moneyIcon1" src="./img/moneyicon.png" alt="money icon"><img class="moneyIcon2" src="./img/moneyiconwhite.png" alt="money icon"> Avail 2x Special offer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex cart_items">
+                    <div class="cart_itm_img_wrpr">
+                        <img src="./img/cart_item1.png" alt="cart item">
+                    </div>
+                    <div class="cart_itm_dtls d-flex justify-content-between ">
+                        <div class="cart_img_detail">
+                            <h3 class="cart_itm_name">GRANORO Bio Penne</h3>
+                            <p>size : 500 grams</p>
+                            <p>item price : 0.49 kb</p>
+                            <p>qty : 03</p>
+                            <p>Expected to be shipped by Tomorrow, 5pm EST</p>
+                            <button class="cart_itm_rmve_btn">remove</button>
+                        </div>
+                        <div class="cart_quntity_avbl_offr d-flex flex-column justify-content-between align-items-end">
+                            <div class="cart_quantity_main d-flex justify-content-between align-items-center">
+                                <span class="cart_qty">qty : </span>
+                                <span class="cart_itm">03</span>
+                            </div>
+                            <button class="av_offr_btn"> <img class="moneyIcon1" src="./img/moneyicon.png" alt="money icon"><img class="moneyIcon2" src="./img/moneyiconwhite.png" alt="money icon"> Avail 2x Special offer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- cart popup end -->
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+         
+        $(document).ready(function(){
+            $('.cart_popup_btn').click(function(e){
+                $('.cart_overlay').fadeIn(500);
+                $('.main_cnt_cart').removeClass('transform-out').addClass('transform-in');
+                e.preventDefault();
+            })
+            $('.cart_close_btn').click(function(e){
+                $('.cart_overlay').fadeOut(500);
+                $('.main_cnt_cart').removeClass('transform-in').addClass('transform-out');
+                e.preventDefault();
+            })
+        })
+
+    </script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/main2.js"></script>
 </body>

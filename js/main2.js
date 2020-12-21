@@ -100,12 +100,10 @@ try{
     function changeCategoriesTabs(e){
 
       var targatedItem = document.querySelector(`#${this.id}_tab`);
-      console.log(targatedItem);
       
       if(this.classList.contains('active')){
         this.classList.toggle('active');
         targatedItem.classList.toggle('active');
-        // controlsMain.classList.toggle('active');
       }else{
             
         // deactivate active from all productCategoriesButtons
