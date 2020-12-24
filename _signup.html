@@ -103,45 +103,47 @@
         </div>
     </header>
     <!-- header end -->
-    <!-- login -->
-    <div class="login_main login_container sign_main">
-        <h1 class="login_title">
+    <!-- signup -->
+    <section class="signup_container signup_main">
+        <h1 class="signup_title">
             Let's Get Started
         </h1>
-        <form id="login_form" name="login_form">
+        <form id="signup_form" name="signup_form">
             <div class="form-group">
-                <label for="login_email">Full Name</label>
-                <input class="form-control" type="text" id="login_email" placeholder="Jhon Doe">
+                <label for="full_name">Full Name</label>
+                <input class="form-control" type="text" id="full_name" placeholder="Jhon Doe">
             </div>
             <div class="form-group">
-                <label for="ps">Date Of Birth</label>
-                <input class="form-control" type="date" id="login_ps" autocomplete = "on"  min="1997-01-01" max="2030-12-31">
+                <label for="dob">Date Of Birth</label>
+                <input class="form-control" type="date" id="dob" autocomplete = "on"  min="1997-01-01" max="2030-12-31">
             </div>
             <div class="form-group signup_uname">
-                <label for="ps">username</label>
-                <input class="form-control" type="text" id="login_ps" placeholder="Sample">
+                <label for="user_name">username</label>
+                <input class="form-control" type="text" id="user_name" placeholder="Sample">
             </div>
             <div class="form-group">
                 <label for="ps">Password</label>
-                <input class="form-control" type="password" id="login_ps">
+                <input class="form-control" type="password" id="ps">
             </div>
             <div class="signin_forget">
                 <div class="signin">
-                    <label for="login_chk" class="login_chk">
-                        <input class="option_input checkbox" type="checkbox" id="login_chk">
+                    <input class="option_input signup_checkbox" type="checkbox" id="sign_chk">
+                    <label for="sign_chk" class="sign_up_chk">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt modi fugiat reiciendis illo veniam, eius quibusdam itaque quae.
                     </label>
                 </div>
                
             </div>
-            <button class="login_btn">sign up</button> <br>
-            <div class="d-flex flex-column flex-md-row align-items-md-center align-items-start justify-content-between"><button class="cnt_google">Continue with Google <img class="gogle_clr" src="./img/gmailIcon.png" alt="gmailIcon"><img class="gogle_wht" src="./img/gmailWhiteIcon.png" alt="gmailIcon"></button>
-                <button class="cnt_facebook">Continue with Facebook <img class="fb_clr" src="./img/fbIcon.png" alt="facebookIcon"><img class="fb_wht" src="./img/fbwhiteIcon.png" alt="facebookIcon"></button></div>
+            <button type="submit" class="signup_btn">sign up</button> <br>
+            <div class="d-flex flex-column flex-md-row align-items-md-center align-items-start justify-content-between">
+                <button class="cnt_google">Continue with Google <img class="gogle_clr" src="./img/gmailIcon.png" alt="gmailIcon"><img class="gogle_wht" src="./img/gmailWhiteIcon.png" alt="gmailIcon"></button>
+                <button class="cnt_facebook">Continue with Facebook <img class="fb_clr" src="./img/fbIcon.png" alt="facebookIcon"><img class="fb_wht" src="./img/fbwhiteIcon.png" alt="facebookIcon"></button>
+            </div>
             
         </form>
         <p class="dnt_have_account">Already have an account. <a class="red_signup" href="#">Log in</a> Now</p>
-    </div>
-    <!-- login end -->
+    </section>
+    <!-- signup end -->
 
     <!-- footer -->
     <footer>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <title>Order Status</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container header_content">
+            <div class="main_nav d-flex align-items-center justify-content-between py-3">
+
+                <ul class="header_list">
+                    <li class="header_list_item">
+                        <button class="trigger d-flex d-md-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </li>
+                    <li class="header_list_item d-none d-md-flex ml-md-0">
+                        <a href="_login.html" class="header_list_link">Sign in</a>
+                    </li>
+                    <li class="header_list_item d-none d-md-flex">
+                        <a href="_signup.html" class="header_list_link">Register</a>
+                    </li>
+                </ul>
+                <a href="index.html" class="logo">
+                    <img src="./img/logo.png" alt="trackpax">
+                </a>
+                <ul class="header_list">
+                    <li class="header_list_item">
+                        <button class="header_list_link" href="#">EN | AR</button>
+                    </li>
+                    <li class="header_list_item">
+                        <button class="header_list_btn search_bar_toggle"><img src="./img/search.png"
+                                alt="search"></button>
+                    </li>
+                    <li class="header_list_item">
+                        <button class="header_list_btn cart_popup_btn"><img src="./img/shop.png" alt="shop"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box border-bottom px-3">
+                <form>
+                    <div class="input-group my-2 flex-nowrap">
+                        <input type="text" class="form-control" placeholder="Search ....!" aria-label="Search ....!"
+                            aria-describedby="searchbar">
+                        <button class="input-group-text search_btn" id="searchbar">
+                            <img src="./img/search.png" alt="search">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header_bottom_menu">
+            <div class="header_bottom_menu_overlay" onclick="headerNavFunc()">
+
+            </div>
+            <div class="header_bottom_nav">
+                <span class="closeNavIcon d-md-none d-block" onclick="headerNavFunc()">
+                    <i class="fas fa-times"></i>
+                </span>
+                <ul class="header_bottom_list">
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link active" href="#showcase">home</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">about us</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">brand</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">shop</a>
+                    </li>
+                    <li class="header_bottom_item">
+                        <a class="header_bottom_link" href="#">content</a>
+                    </li>
+                </ul>
+                <div class="social_btn d-md-none d-flex pt-4 mb-4">
+                    <a href="_login.html" class="header_form_link w-50">Sign in</a>
+
+                    <a href="_signup.html" class="header_form_link w-50  ml-2">Register</a>
+                </div>
+                <div class="header_bottom_footer d-md-none d-block">
+                    <div class="mt-5 header__social__icon__list d-flex justify-content-center align-items-center">
+                        <a href="#" class="header__social__icon"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="header__social__icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="header__social__icon"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <p class="header_bottom_footer_txt text-center">Copyright © 2020 rrstek-cctv-All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- order status -->
+    <section class="order_status container">
+        <h1 class="order_status_title">Hi, Jhon</h1>
+        <h5 class="order_status_sub_title">Manage your orders quickly and safely</h5>
+        <div class="order_status_content">
+            <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-prcssing-tab" data-toggle="pill" href="#pills-prcssing" role="tab"
+                        aria-controls="pills-prcssing" aria-selected="true">processing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-shiped-tab" data-toggle="pill" href="#pills-shiped" role="tab"
+                        aria-controls="pills-shiped" aria-selected="false">shiped</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-cancelled-tab" data-toggle="pill" href="#pills-cancelled" role="tab"
+                        aria-controls="pills-cancelled" aria-selected="false">cancelled</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-prcssing" role="tabpanel" aria-labelledby="pills-prcssing-tab">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th>Order No.</th>
+                                <th>Order Date</th>
+                                <th class="shipment_heading">Shipment Date</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-shiped" role="tabpanel" aria-labelledby="pills-shiped-tab">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th>Order No.</th>
+                                <th>Order Date</th>
+                                <th class="shipment_heading">Shipment Date</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-cancelled" role="tabpanel" aria-labelledby="pills-cancelled-tab">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th>Order No.</th>
+                                <th>Order Date</th>
+                                <th class="shipment_heading">Shipment Date</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ordr_id">QA45599077BQAS</span> <br>
+                                        <a href="#" class="ordr_dtls">view details</a> <br>
+                                        <button class="cancel_ordr">cancel order</button>
+                                    </td>
+                                    <td class="ordr_date_date">04 01 2020</td>
+                                    <td class="ordr_ship_date">06 01 2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- order status end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <img class="footer_logo" src="./img/footerlogo.png" alt="farmland">
+            <div class="row justify-content-between footer_col_main">
+                <div class="col-md-2 col-4 first_col d-flex flex-column justify-content-between ">
+                    <h2 class="footer_social_title">Follow Us</h2>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social_icon"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fab fa-behance-square"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 sec_col px-0">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Privacy policy</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Refund policy</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Terms of service</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-4 third_col pr-0">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">FAQ</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="footer_link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-9 d-flex align-items-md-end fourth_col mt-3 mt-md-0 mx-auto mx-md-0">
+                    <form>
+                        <div class="input-group my-2 flex-nowrap">
+                            <input type="text" class="form-control" placeholder="Subscribe us" aria-label="Subscribe_us"
+                                aria-describedby="Subscribe_us">
+                            <button class="input-group-text search_btn" id="Subscribe_us">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="footer_bottom text-center">
+                <p class="footer_bottom_txt">&copy;2020 FarmLand.Inc</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- Jquery Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.cart_popup_btn').click(function (e) {
+                $('.cart_overlay').fadeIn(500);
+                $('.main_cnt_cart').removeClass('transform-out').addClass('transform-in');
+                e.preventDefault();
+            })
+            $('.cart_close_btn').click(function (e) {
+                $('.cart_overlay').fadeOut(500);
+                $('.main_cnt_cart').removeClass('transform-in').addClass('transform-out');
+                e.preventDefault();
+            })
+        })
+
+    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main2.js"></script>
+</body>
+
+</html>
