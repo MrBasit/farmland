@@ -180,6 +180,17 @@ CONTAINER
         width: 10.5rem !important;
        
     }
+    /* filter */
+    .product_filter_list .filter_btn{
+        padding: .6em 1.6em !important;
+    }
+    
+}
+@media (max-width: 1200px){
+    /* filter */
+    .product_filter_list .filter_btn{
+        padding: .6em 2em !important;
+    }
     
 }
 
@@ -266,6 +277,7 @@ CONTAINER
     {
         color: var(--text-black);
         font-size: 1.5rem;
+        cursor: not-allowed;
     }
     .header__social__icon__list .header__social__icon + .header__social__icon
     {
@@ -396,6 +408,7 @@ header .main_nav{
 .main_nav .trigger{
     font-size: 1.4rem;
     color: var(--text-grey);
+    cursor: pointer !important;
 }
 .logo img{
     width: 8rem;
@@ -418,14 +431,20 @@ header .main_nav{
     word-spacing: -.1rem;
     font-weight: 500;
     color: var(--text-black);
+    
+}
+.header_list :nth-child(1) button{
+    cursor: not-allowed;
 }
 .header_list .header_list_item button:hover,
 .header_list .header_list_item button:focus{
     text-decoration: underline;
     outline: none;
+   
 }
 .header_list .header_list_item .header_list_btn img{
     width: 1.1rem;
+    cursor: pointer;
 }
 header .search_btn{
     background: none !important;
@@ -482,7 +501,12 @@ header .search_box .search_btn img{
     position: relative;
     padding-bottom: .2em;
     font-weight: 400;
+    cursor: not-allowed;
  
+}
+.header_bottom_list  li:nth-child(1) a{
+    cursor: pointer;
+    
 }
 .header_bottom_link::after{
     position: absolute;
@@ -578,6 +602,7 @@ header .search_box .search_btn img{
     animation: captionTexts .5s ease forwards;
     animation-delay: .8s;
     transition: box-shadow .5s, background-color .5s;
+    cursor: not-allowed;
 }
 .showcase_slider_content_main .slider_content_cart_btn:hover,
 .showcase_slider_content_main .slider_content_cart_btn:focus{
@@ -761,6 +786,7 @@ header .search_box .search_btn img{
     padding: .6em 3em;
     width: 100%;
     text-transform: uppercase;
+    cursor: not-allowed ;
 }
 .product_filter_list .filter_btn:focus{
     outline: none;
@@ -882,10 +908,12 @@ header .search_box .search_btn img{
     width: 100%;
     margin: .8rem 0;
     transition: box-shadow .5s, background-color .5s;
+    cursor: not-allowed !important;
 }
 .prd_crd_btn{
     border: 0;
     outline: none;
+    
 }
 .prd_crd_btn:hover,
 .prd_crd_btn:focus{
@@ -897,6 +925,7 @@ header .search_box .search_btn img{
     color: var(--black2);
     font-size: .9rem;
     transition: opacity .3s;
+    cursor: not-allowed !important;
 }
 .prd_crd_remove_btn:hover,
 .prd_crd_remove_btn:focus{
@@ -951,14 +980,17 @@ footer{
 .footer_social .footer_social_icon i{
     font-size: 1.2rem;
     color: var(--text-black);
+    cursor: not-allowed;
 }
 .footer_social .footer_social_icon + .footer_social_icon{
     margin-left: 1.2rem;
+
 }
 .footer_link{
     color: var(--text-black);
     font-size: 1rem;
     font-weight: 500;
+    cursor: not-allowed;
 }
 .footer_link:hover,
 .footer_link:focus{
@@ -1072,6 +1104,7 @@ footer{
     outline: none;
     transition: all .3s;
     color: var(--text-black);
+    cursor: not-allowed;
 }
 .bck_to_shp_btn:hover,
 .bck_to_shp_btn:focus{
@@ -1085,6 +1118,7 @@ footer{
     outline: none;
     transition: all .3s;
     color: var(--text-white);
+    cursor: not-allowed;
 }
 .prcd_chk_btn:hover,
 .prcd_chk_btn:focus{
@@ -1161,6 +1195,7 @@ footer{
     background-color: transparent;
     border: none;
     position: relative;
+    cursor: not-allowed;
 }
 .cart_img_detail .cart_itm_rmve_btn::after{
     position: absolute;
@@ -1202,6 +1237,7 @@ footer{
     font-weight: 700;
     border-radius: .2rem;
     transition: all .3s;
+    cursor: not-allowed !important;
 }
 .av_offr_btn:hover,
 .av_offr_btn:focus{
@@ -1326,6 +1362,7 @@ footer{
     font-weight: 550;
     display: flex;
     align-items: center;
+    cursor: not-allowed;
 }
 
 .signup_main form .forget a .lockIcon2,
@@ -1366,6 +1403,7 @@ footer{
     border: none;
     outline: none;
     transition: all .5s;
+    cursor: not-allowed;
 }
 .checkout_main form .cnfrm_ord_btn:hover,
 .checkout_main form .cnfrm_ord_btn:focus,
@@ -1394,10 +1432,12 @@ footer{
     justify-content: center;
     width: 22rem;
     transition: all .4s;
+    cursor: not-allowed;
 }
 .signup_main .cnt_google,
 .login_main .cnt_google{
     margin-right: 1.5rem;
+    cursor: not-allowed;
 }
 .signup_main .cnt_google:hover,
 .signup_main .cnt_google:focus,
@@ -1646,6 +1686,7 @@ footer{
     padding: .7em 0;
     text-transform: uppercase;
     transition: box-shadow .5s, background-color .5s;
+    cursor: not-allowed !important;
 }
 .add_rmv_cart_rmve:focus,
 .add_rmv_cart_add:focus{
@@ -1753,6 +1794,7 @@ footer{
     text-transform: capitalize;
     margin-top: .3rem;
     display: inline-block;
+    cursor: not-allowed;
 }
 .order_status_content .tab-content .table .cancel_ordr{
     display: inline-block;
@@ -1766,6 +1808,7 @@ footer{
     padding: 0 0 .6em 0;
     margin-top: 1rem;
     position: relative;
+    cursor: not-allowed;
 }
 .order_status_content .tab-content .table .cancel_ordr::after{
     content: '';
@@ -1846,6 +1889,7 @@ footer{
     background-color: transparent;
     border: none;
     position: relative;
+    cursor: not-allowed;
 }
 .checkout_items_main .cart_img_detail .cart_itm_rmve_btn::after{
     position: absolute;
@@ -1873,6 +1917,7 @@ footer{
 .checkout_items_main .cart_qty .inc_dec_btn i{
     line-height: .8 !important;
     color: var(--text-black);
+    cursor: not-allowed;
 }
 .checkout_items_main .cart_qty .inc_dec_btn{
     margin-top: .3rem;
