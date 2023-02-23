@@ -1627,7 +1627,7 @@
                 <div class="brands_rella">
                     <div class="content_slider">
                         <div class="content_slide active">
-                            <div class="row">
+                            <div class="row row-flex">
                                 <div class="col-6 col-md-4">
                                     <div class="prd_card">
                                         <div class="prd_crd_head text-right">
@@ -2530,11 +2530,13 @@
 
         $(document).ready(function () {
             $('.cart_popup_btn').click(function (e) {
+                $('body').addClass('position-fixed');
                 $('.cart_overlay').fadeIn(500);
                 $('.main_cnt_cart').removeClass('transform-out').addClass('transform-in');
                 e.preventDefault();
             })
             $('.cart_close_btn').click(function (e) {
+                $('body').removeClass('position-fixed');
                 $('.cart_overlay').fadeOut(500);
                 $('.main_cnt_cart').removeClass('transform-in').addClass('transform-out');
                 e.preventDefault();

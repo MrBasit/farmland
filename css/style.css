@@ -277,7 +277,6 @@ CONTAINER
     {
         color: var(--text-black);
         font-size: 1.5rem;
-        cursor: not-allowed;
     }
     .header__social__icon__list .header__social__icon + .header__social__icon
     {
@@ -373,6 +372,7 @@ CONTAINER
     .add_rmv_cart_dtls_radio_grp span{
         margin-left: 1.5rem !important;
     }
+   
     
 }
 /* ----- Header ------------------------------------------------------- */
@@ -434,7 +434,7 @@ header .main_nav{
     
 }
 .header_list :nth-child(1) button{
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
 }
 .header_list .header_list_item button:hover,
 .header_list .header_list_item button:focus{
@@ -501,7 +501,6 @@ header .search_box .search_btn img{
     position: relative;
     padding-bottom: .2em;
     font-weight: 400;
-    cursor: not-allowed;
  
 }
 .header_bottom_list  li:nth-child(1) a{
@@ -602,7 +601,6 @@ header .search_box .search_btn img{
     animation: captionTexts .5s ease forwards;
     animation-delay: .8s;
     transition: box-shadow .5s, background-color .5s;
-    cursor: not-allowed;
 }
 .showcase_slider_content_main .slider_content_cart_btn:hover,
 .showcase_slider_content_main .slider_content_cart_btn:focus{
@@ -908,7 +906,6 @@ header .search_box .search_btn img{
     width: 100%;
     margin: .8rem 0;
     transition: box-shadow .5s, background-color .5s;
-    cursor: not-allowed !important;
 }
 .prd_crd_btn{
     border: 0;
@@ -1104,7 +1101,6 @@ footer{
     outline: none;
     transition: all .3s;
     color: var(--text-black);
-    cursor: not-allowed;
 }
 .bck_to_shp_btn:hover,
 .bck_to_shp_btn:focus{
@@ -1118,7 +1114,6 @@ footer{
     outline: none;
     transition: all .3s;
     color: var(--text-white);
-    cursor: not-allowed;
 }
 .prcd_chk_btn:hover,
 .prcd_chk_btn:focus{
@@ -1237,7 +1232,6 @@ footer{
     font-weight: 700;
     border-radius: .2rem;
     transition: all .3s;
-    cursor: not-allowed !important;
 }
 .av_offr_btn:hover,
 .av_offr_btn:focus{
@@ -2004,4 +1998,21 @@ footer{
 .checkout_main .cnfrm_ord_btn{
     margin-top: 0 !important;
     margin-left: 3.8rem !important;
+}
+
+@media (max-width: 375px) {
+
+    .row-flex{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row-flex .col-6{
+        max-width: 75%;
+    }
+    
+}
+
+.position-fixed{
+    position: fixed;
 }
